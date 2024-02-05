@@ -205,7 +205,7 @@ body {
       padding: 0;
     }
     .navbar {
-      flex-direction: column;
+      /* flex-direction: column; */
       justify-content: space-evenly;
       height: 100px;
     }
