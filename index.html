@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="signin.css">
+   
+    
+  </head>
+ 
+  <body>
+
+
+    <!-- navbar -->
+ 
+
+    <header class="header">
+      <nav class="navbar">
+          <a href="index.html" class="nav-logo"><img src="iXSqNF.png" height="100px"></a>
+          <ul class="nav-menu">
+              <ul class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+              </ul>
+              <ul class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+              </ul>
+              <ul class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+              </ul>
+              <ul class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+              </ul>
+
+          </ul>
+          <button class="mlog" onclick="Signup()">Signup</button>
+          <!-------------------------------------------
+                        for mobile
+           -------------------------------------------->
+          <div class="mobile">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+
+  </header>
+
+  <!------------------------------ 
+                form
+  ---------------------------->
+
+
+  <div class="box " id="myForm">
+      <div id="login">
+          <button class="closeForm" onclick="closeForm()"><img src="cross.png" height="20px"></button>
+
+          <h2 class="heading">LOGIN</h2>
+          <form action="" class="form-container">
+
+              <div class="inputDiv">
+                  <label for="email" class="email">Email</label>
+                  <div class="userArea">
+                      <i class="fa fa-envelope" aria-hidden="true"></i><input type="text" name="email" id="email"
+                          placeholder="Type your Email-Id" required>
+                  </div>
+                  <hr>
+              </div>
+              <div class="inputDiv">
+                  <label for="password" class="username">Password</label>
+                  <div class="userArea">
+                      <i class="fa-solid fa-key"></i><input type="password" name="password" id="password"
+                          placeholder="Type your password" required>
+                  </div>
+                  <hr>
+              </div>
+
+              <span class="forgotPassword">Forgot password?</span>
+              <button class="btn" type="submit">Login</button>
+              <hr>
+              <div class="formBottom">
+                  <p> login using</p>
+                  <ul class="account">
+                      <a href="" target="_blank">
+                          <li><img src="linkedin.png" height="25px"></li>
+                      </a>
+                      <a href="" target="_blank">
+                          <li><img src="instagram.png" height="25px"></li>
+                      </a>
+                      <a href="https://www.google.com/" target="_blank">
+                          <li><img src="facebook.png" height="25px"></li>
+                      </a>
+                  </ul>
+                  <p class="signUp">Don't have account</p>
+                  <a href="sign.html" target="_self" onclick="signin()">SIGN UP</a>
+              </div>
+
+
+          </form>
+      </div>
+  </div>
+ 
+
+    
+    <!-- cart Screen -->
+
+    <div class="navbar">
+
+    </div>
+    <div class="cart" id="cart">
+
+      <div class="cart-head">
+        <h3 class="closeBtn" onclick="closeBtn()">x</h3>
+        <center><h1>my Cart</h1></center>
+      </div>
+
+      <div class="cart-body" id="cart-body">
+        <center>your cart is empty...</center>
+      </div>
+
+      <div class="cart-footer">
+       <center>Total Price: <span id="cartTotal">0</span> PKR</center>
+       <center><button class="btn" onclick="clearCart()">clear cart</button></center>
+    </div>
+
+    </div>
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search..."
+        oninput="handleSearch(this.value)"
+      />
+      <b class="cartIcon" onclick="toggleCart()">cart <span id="cartLength"> 0</span></b>
+    </div>
+
+    <!-- slider start -->
+
+ <div class="slider-container">
+    <div class="slides">
+        <div class="slide"><img src="dark-haired-woman-with-red-lipstick-smiles-leans-stand-with-clothes-holds-package-pink-background.jpg"></div>
+        <div class="slide"><img src="girls tee.jpg"
+                 alt=""></div>
+        <div class="slide"><img
+                src="https://watermark.lovepik.com/photo/40008/0007.jpg_wh1200.jpg">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+</div>
+<!-------------------- slider end --------------------------->
+
+    <div class="product-section" id="productSection"></div>
+    
+
+
+   <!--------------------------------------
+         start of footer
+    ----------------------------------------->
+
+    <div class="footer-section" >
+        <div>
+            <img src="iXSqNF.png" alt="">
+        </div>
+        <div class="footer-item">
+            <h2>Company</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Shipping </a></p>
+            <p><a href=""> Retuns </a></p>
+            <p><a href=""> Payment Options </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Online Shop</h2>
+            <p><a href=""> Blogs </a></p>
+            <p><a href=""> Watch </a></p>
+            <p><a href=""> Shoes </a></p>
+            <p><a href=""> Bress </a></p>
+        </div>
+        <div class="footer-item social">
+            <h2> Follow Us </h2>
+            <ul>
+              <li><img src="facebook.png" height="20px"></li>
+              <li><img src="linkedin.png" height="20px"></li>
+              <li><img src="instagram.png" height="20px"></li>
+            </ul>
+        </div>
+    </div>
+    <!---------------------------------------
+             end of footer 
+-------------------------------------->
+
+    <script src="index.js"></script>
+  </body>
+</html>

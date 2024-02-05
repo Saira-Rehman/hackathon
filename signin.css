@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*------------------------------------------
+                 header and navbar
+-------------------------------------------*/
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+/*----------------------------------------
+                 mobile style 
+-----------------------------------------*/
+.mobile {
+    display: none;
+   
+}
+
+.bar {
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  
+}
+
+.nav-menu {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-link:hover {
+    color: #133df7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.mlog {
+    border: 2px white;
+    justify-content: space-around;
+    border-radius: 7px;
+    padding: inherit;
+    background-color: #133df7;
+    color: #E2E8F0;
+    font-size: xx-large;
+    padding-right: 5px;
+
+}
+
+.mlog:hover {
+    background-color: #0931e5;
+
+}
+
+/* -------------------------------------
+            FORM  START
+------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        z-index: 1000;
+        
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgb(53, 44, 44);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .mobile {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/*----------------------------------------------
+
+            navbar  Inside (mobile) the Media Query. 
+------------------------------------------------*/
+
+.mobile.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* The popup form - hidden by default */
+.box {
+
+    margin: 15px;
+    padding: 19px;
+    font-size: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: .8rem;
+    display: none;
+    justify-content: center;
+    bottom: 0;
+    box-shadow: 10px 10px 5px grey;
+    /* z-index: 9; */
+}
+
+.perm {
+    margin-top: 0;
+    margin: 15px;
+    padding: 19px;
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: .9rem;
+    /* display: ; */
+    justify-content: center;
+    bottom: 0;
+    box-shadow: 10px 10px 5px grey;
+    z-index: 9;
+}
+
+/* Set a style for the submit/login button */
+.form-container .closeForm {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+
+.box form,
+.perm form {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.closeForm {
+    width: 40px;
+    font-size: 20px;
+    border: none;
+
+}
+
+.closeForm:hover,
+.close:hover {
+    background: rgb(192, 189, 189);
+}
+
+.box h2,
+.perm h2 {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+
+
+
+.box form input,
+.perm form input {
+    font-weight: lighter;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+.box form .username,
+.perm form .username {
+    margin-bottom: .7rem;
+}
+
+.box form i,
+.perm form i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.box form input,
+.perm form input {
+    font-size: 1rem;
+}
+
+.userArea {
+    margin-bottom: .7rem;
+}
+
+.box form .forgotPassword,
+.perm form .forgotPassword {
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
+    bottom: 19rem;
+    color: rgb(113, 119, 124);
+    font-size: .9rem;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .8rem;
+}
+
+.formBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formBottom ul {
+    margin-bottom: 3rem;
+}
+
+.formBottom p {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account a {
+    text-decoration: none;
+}
+
+.account li {
+    list-style: none;
+}
+
+.account li i {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-google {
+    background-color: rgb(208, 27, 27);
+}
+
+.fa-twitter {
+    background-color: rgb(43, 71, 228);
+}
+
+.fa-facebook-f {
+    background-color: darkblue;
+}
+
+
+.fa-google:hover {
+    background-color: rgb(213, 25, 16)
+}
+
+.fa-twitter:hover {
+    background-color: rgb(18, 50, 234);
+}
+
+.fa-facebook-f:hover {
+    background-color: rgb(1, 1, 208);
+}
+
+
+
+/* Utility Classes */
+.heading {
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding: 0.7rem 0.8rem;
+    background: #e34494;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    justify-content: center;
+}
+
+.signUp,
+.sign {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #7d3edb, #e12d87);
+
+}
+
+@media (min-width: 260px) {
+    .perm {
+        width: 600px;
+        height: 800px;
+        font-size: 30px;
+    }
+
+    .box {
+        width: 200px;
+        height: 500px;
+        font-size: 15px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .box form input,
+    .perm form input {
+        font-weight: bold;
+        border: none;
+
+
+
+    }
+}
+
+
+
+@media (min-width: 760px) {
+
+    .box {
+        width: 300px;
+        height: 450px;
+        font-size: 15px;
+    }
+
+    .perm {
+        width: 400px;
+        height: 600px;
+        font-size: 15px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .box form input,
+    .perm form input {
+        font-weight: lighter;
+        border: none;
+    }
+}
+

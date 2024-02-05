@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About-Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <style>
+       
+        .img
+        {
+            height:"100px";
+        }
+        /* div{
+            display: flex;
+        } */
+
+        #more{
+
+            background-color: #e12d87;
+            border-color: #e12d87;
+            border-radius: 5px;
+        }
+       #more:hover{
+        background: linear-gradient(to right, #7d3edb, #e12d87);
+        border-color: linear-gradient(to right, #7d3edb, #e12d87);
+        border-radius: 5px;
+       }
+       #less{
+            background-color: #e12d87;
+            border-color: #e12d87;
+            border-radius: 5px;
+        }
+       #less:hover{
+        background: linear-gradient(to right, #7d3edb, #e12d87);
+        border-color: linear-gradient(to right, #7d3edb, #e12d87);
+        border-radius: 5px;
+       }
+      
+
+        .write,
+        #loerm, #loer {
+          
+            box-sizing: initial;
+            text-align: center;
+            
+    letter-spacing: 0.06rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    
+        }
+        #loerm{
+            display: none;
+        }
+
+        #loerm ,#loer {
+            padding-top: 20px;
+           box-sizing: initial;
+            text-align: center;
+    letter-spacing: 0.06rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    
+        }
+        .para{
+            color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word;
+        }
+        .view{
+            color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; padding-bottom: 20px;
+        }
+        .sub{
+            color: #7c795d; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="index.html"></a>
+    
+
+   <!-- navbar -->
+ 
+
+   <header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo"><img src="iXSqNF.png" height="100px"></a>
+        <ul class="nav-menu">
+            <ul class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </ul>
+            <ul class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </ul>
+            <ul class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </ul>
+            <ul class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </ul>
+
+        </ul>
+        <button class="mlog" onclick="Signup()">Signup</button>
+        <!-------------------------------------------
+                      for mobile
+         -------------------------------------------->
+        <div class="mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+</header>
+
+<!------------------------------ 
+              form
+---------------------------->
+
+
+<div class="box " id="myForm">
+    <div id="login">
+        <button class="closeForm" onclick="closeForm()"><img src="cross.png" height="20px"></button>
+
+        <h2 class="heading">LOGIN</h2>
+        <form action="" class="form-container">
+
+            <div class="inputDiv">
+                <label for="email" class="email">Email</label>
+                <div class="userArea">
+                    <i class="fa fa-envelope" aria-hidden="true"></i><input type="text" name="email" id="email"
+                        placeholder="Type your Email-Id" required>
+                </div>
+                <hr>
+            </div>
+            <div class="inputDiv">
+                <label for="password" class="username">Password</label>
+                <div class="userArea">
+                    <i class="fa-solid fa-key"></i><input type="password" name="password" id="password"
+                        placeholder="Type your password" required>
+                </div>
+                <hr>
+            </div>
+
+            <span class="forgotPassword">Forgot password?</span>
+            <button class="btn" type="submit">Login</button>
+            <hr>
+            <div class="formBottom">
+                <p> login using</p>
+                <ul class="account">
+                    <a href="" target="_blank">
+                        <li><img src="linkedin.png" height="25px"></li>
+                    </a>
+                    <a href="" target="_blank">
+                        <li><img src="instagram.png" height="25px"></li>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank">
+                        <li><img src="facebook.png" height="25px"></li>
+                    </a>
+                </ul>
+                <p class="signUp">Don't have account</p>
+                <a href="sign.html" target="_self" onclick="signin()">SIGN UP</a>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+  
+  
+
+
+    
+            <div class="write" >
+                
+                  
+            <h3 class="view">OVERVIEW</h3>
+           <p class="para"> This website is operated by AoUnS OwN Shop. Throughout the site, the terms “we”, “us” and “our” refer to AoUnS OwN Shop. AoUnS OwN Shop offers this website, including all information, tools and Services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p><br>
+            
+           <p class="para"> By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content.</p><br>
+            
+           <p class="para"> Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any Services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.</p><br>
+            
+            <p class="para">Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes.</p><br>
+            
+           <p class="para"> Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and Services to you.</p><br>
+            
+           <h3 class="sub"><b>SECTION 1 - ONLINE STORE TERMS</b></h3> 
+           <p class="para"> By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.</p><br>
+            <p class="para">You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).
+            You must not transmit any worms or viruses or any code of a destructive nature.
+            A breach or violation of any of the Terms will result in an immediate termination of your Services.</p><br>
+                
+                <p class="para">we have a great offers and discounts. we also have online free delievery. you can contact us for more
+                    info </p>
+                <button id="more" onclick="more() "> READ MORE</button>
+            </div>
+            <div id="loerm">
+                <h3 class="sub"><b>SECTION 2 - GENERAL CONDITIONS</b></h3>
+                <p class="para">We reserve the right to refuse Service to anyone for any reason at any time.</p><br>
+                <p class="para">You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.</p><br>
+                <p class="para">You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the Service is provided, without express written permission by us.
+                <p class="para">The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p><br>
+                
+                <h3 class="sub"><b>SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION</b></h3>
+                <p class="para">We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.</p><br>
+                <p class="para">This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.</p><br>
+                
+                <h3 class="sub"><b>SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES</b></h3>
+                <p class="para">Prices for our products are subject to change without notice.
+                We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.</p><br>
+                <p class="para">We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.</p><br>
+                
+                <h3 class="sub"><b>SECTION 5 - PRODUCTS OR SERVICES (if applicable)</b></h3>
+                <p class="para">Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Refund Policy: [LINK TO REFUND POLICY]
+                <p class="para">We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. We cannot guarantee that your computer monitor's display of any color will be accurate.</p><br>
+                <p class="para">We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction. We may exercise this right on a case-by-case basis.</p><br>
+                <p class="para">We reserve the right to limit the quantities of any products or Services that we offer. All descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right to discontinue any product at any time. Any offer for any product or Service made on this site is void where prohibited.</p><br>
+               
+                
+                <button id="less" onclick="less()">SHOW LESS</button>
+          
+
+     <!--------------------------------------
+         start of footer
+    ----------------------------------------->
+
+    <div class="footer-section">
+        <div>
+            <img src="iXSqNF.png" alt="">
+        </div>
+        <div class="footer-item">
+            <h2>Company</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Shipping </a></p>
+            <p><a href=""> Retuns </a></p>
+            <p><a href=""> Payment Options </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Online Shop</h2>
+            <p><a href=""> Blogs </a></p>
+            <p><a href=""> Watch </a></p>
+            <p><a href=""> Shoes </a></p>
+            <p><a href=""> Bress </a></p>
+        </div>
+        <div class="footer-item social">
+            <h2> Follow Us </h2>
+            <ul>
+                <li><img src="facebook.png" height="20px"></li>
+                <li><img src="linkedin.png" height="20px"></li>
+                <li><img src="instagram.png" height="20px"></li>
+              </ul>
+        </div>
+    </div>
+    <!---------------------------------------
+             end of footer 
+-------------------------------------->
+
+    <script>
+        function more() {
+            document.getElementById('loerm').style.display = "block";
+            document.getElementById('more').style.display = "none";
+
+        }
+
+        function less() {
+            document.getElementById('loerm').style.display = "none";
+            document.getElementById('more').style.display = "block";
+        }
+        // -----------for 2nd div -----------------------//
+        function Rmore() {
+            document.getElementById('loer').style.display = "block";
+            document.getElementById('Rmore').style.display = "none";
+
+        }
+
+        function Sless() {
+            document.getElementById('loer').style.display = "none";
+            document.getElementById('Rmore').style.display = "block";
+        }
+    </script>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
