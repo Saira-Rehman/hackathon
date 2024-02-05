@@ -33,7 +33,7 @@
                  mobile style 
 -----------------------------------------*/
 .mobile {
-    display: none;
+    display: none ;
    
 }
 
@@ -96,7 +96,7 @@
             FORM  START
 ------------------------------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 728px) {
     .nav-menu {
         position: fixed;
         z-index: 1000;
@@ -262,7 +262,7 @@ input:focus {
     position: absolute;
     right: 0rem;
     cursor: pointer;
- 
+  
     color: rgb(113, 119, 124);
     font-size: .9rem;
 }
@@ -278,6 +278,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
 }
 
 .formBottom ul {
@@ -367,11 +368,14 @@ input:focus {
     background: linear-gradient(to right, #7d3edb, #e12d87);
 
 }
+
 .signUp,
 .sign {
     font-size: 10px;
     cursor: pointer;
 }
+
+
 
 
 @media (min-width: 260px) {
@@ -391,8 +395,9 @@ input:focus {
         text-align: center;
     }
 
+    
     .box form input,
-    .perm form input {
+    .perm form input  {
         font-weight: bold;
         border: none;
 
