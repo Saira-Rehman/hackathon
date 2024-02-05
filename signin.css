@@ -262,7 +262,7 @@ input:focus {
     position: absolute;
     right: 0rem;
     cursor: pointer;
-    bottom: 19rem;
+ 
     color: rgb(113, 119, 124);
     font-size: .9rem;
 }
@@ -363,17 +363,16 @@ input:focus {
     color: #fff;
     justify-content: center;
 }
+.btn:hover {
+    background: linear-gradient(to right, #7d3edb, #e12d87);
 
+}
 .signUp,
 .sign {
     font-size: 10px;
     cursor: pointer;
 }
 
-.btn:hover {
-    background: linear-gradient(to right, #7d3edb, #e12d87);
-
-}
 
 @media (min-width: 260px) {
     .perm {
@@ -383,8 +382,8 @@ input:focus {
     }
 
     .box {
-        width: 200px;
-        height: 500px;
+        width: 300px;
+        height: 600px;
         font-size: 15px;
     }
 
